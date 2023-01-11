@@ -1,4 +1,0 @@
-repository "the-fight-against-mother-nature@gilst@cloud"
-  path "/"
-    smartbranch "/main"   
-     

@@ -111,8 +111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d684c4e83af14918bfc1176c9a5bae7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minDisappearTime: 60
-  maxDisappearTime: 180
+  minDisappearTime: 1
+  maxDisappearTime: 3
   brokenMaterial:
   - {fileID: 2800000, guid: ddee01e2719a1394d95c1f33ec367a3a, type: 3}
 --- !u!54 &4995540411394412035
