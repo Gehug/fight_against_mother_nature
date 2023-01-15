@@ -118019,10 +118019,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1551240292}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6a395d64aed0e44bac715823351e0f5, type: 3}
+  m_Script: {fileID: 11500000, guid: 86ab8c5e33be2364aa5708f78b0ac811, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1689065893}
+  RespawnName: MiniGame2
 --- !u!1 &1598162935
 GameObject:
   m_ObjectHideFlags: 0
@@ -160571,7 +160572,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2016960130}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
