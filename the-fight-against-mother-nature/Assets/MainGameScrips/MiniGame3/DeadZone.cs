@@ -14,7 +14,9 @@ public class DeadZone : MonoBehaviour
         if (collision.gameObject.CompareTag("Player")) {
 
             SceneManager.LoadScene("MiniGame3");
+            
 
         }
+        print("speler is dood gegaan");
     }
 }
