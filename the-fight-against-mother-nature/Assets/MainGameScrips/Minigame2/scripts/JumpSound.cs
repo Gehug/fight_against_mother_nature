@@ -23,17 +23,12 @@ public class JumpSound : MonoBehaviour
                 {
                     jumpSound.Play();
                 }
-                else
+
+                if  (hit.collider.tag == "Platform")
                 {
+                    jumpSound.Play();
                 }
             }
-            else
-            {
-
-            }
-        }
-        else
-        {
         }
     }
 }
