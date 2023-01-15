@@ -18,7 +18,7 @@ public class footsteps : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, raycastDistance))
             {
-                if (hit.collider.tag == "Untagged")
+                if (hit.collider.tag == "Untagged" || hit.collider.tag == "Platform")
                 {
                     footstepsSound.enabled = true;
                 }
