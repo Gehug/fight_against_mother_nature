@@ -8,24 +8,14 @@ using UnityEngine.UI;
 public class MainGameController : MonoBehaviour
 {
 
-    //[SerializeField] GameObject startGameCanvas;
-    //[SerializeField] bool enableStartGameCanvasOnStartUp;
 
    
     [SerializeField] GameObject playAgainCanvas;
-
     [SerializeField] GameObject pauseCanvas;
-
     [SerializeField] string levelToLoad;
-
-
-
     [SerializeField] bool startTimer = true;
-
     [SerializeField] float timeLeft = 180f;
     [SerializeField] Text timerText; // used for showing countdown from 3, 2, 1
-
-
 
 
 
@@ -40,12 +30,13 @@ public class MainGameController : MonoBehaviour
 
             UpdateTimer();
 
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                TogglePause();
+        }
 
 
-            }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            TogglePause();
+
 
         }
 
@@ -67,12 +58,9 @@ public class MainGameController : MonoBehaviour
 
         {
 
-            if (levelToLoad != null)
+            if (levelToLoad != "")
             {
-
                 LoadLevel();
-                startTimer = false;
-                timerText.text = "0";
             }
         }
     }
@@ -125,7 +113,6 @@ public class MainGameController : MonoBehaviour
 
     public void LoadLevel()
     {
-        //Load the new level (mLevelToLoad)
         SceneManager.LoadScene(levelToLoad);
     }
 
