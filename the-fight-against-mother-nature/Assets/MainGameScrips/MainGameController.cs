@@ -16,25 +16,20 @@ public class MainGameController : MonoBehaviour
 
     [SerializeField] GameObject pauseCanvas;
 
+    [SerializeField] string levelToLoad;
+
+
 
     [SerializeField] bool startTimer = true;
 
     [SerializeField] float timeLeft = 180f;
     [SerializeField] Text timerText; // used for showing countdown from 3, 2, 1
 
-    [SerializeField] UnityEvent TimeOverFunction;
 
 
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
 
-
-
-
-    }
 
     // Update is called once per frame
     void Update()
@@ -72,10 +67,10 @@ public class MainGameController : MonoBehaviour
 
         {
 
-            if (TimeOverFunction != null)
+            if (levelToLoad != null)
             {
 
-                TimeOverFunction.Invoke();
+                LoadLevel();
                 startTimer = false;
                 timerText.text = "0";
             }
@@ -125,6 +120,13 @@ public class MainGameController : MonoBehaviour
         playAgainCanvas.SetActive(false);
         //Cursor.visible = false;
 
+    }
+
+
+    public void LoadLevel()
+    {
+        //Load the new level (mLevelToLoad)
+        SceneManager.LoadScene(levelToLoad);
     }
 
 
