@@ -12,7 +12,7 @@ public class Waterfloor : MonoBehaviour
         if (Col.gameObject.tag == "Player")
         {
             //RespawnAtCheckpoint();
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("Startscene");
         }
     }
 
