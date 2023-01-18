@@ -34,9 +34,3 @@ public class JumpSound : MonoBehaviour
 }
 
 
-//        if (Input.GetKeyDown(KeyCode.Space))
-//        {
-//            jumpSound.Play();
-//        }
-//    }
-//}

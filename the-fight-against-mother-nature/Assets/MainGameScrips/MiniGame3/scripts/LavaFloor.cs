@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Waterfloor : MonoBehaviour
+public class LavaFloor : MonoBehaviour
 {
     public Transform player;
 
@@ -12,7 +12,7 @@ public class Waterfloor : MonoBehaviour
         if (Col.gameObject.tag == "Player")
         {
             //RespawnAtCheckpoint();
-            SceneManager.LoadScene("MiniGame1");
+            SceneManager.LoadScene("MiniGame3");
         }
     }
 }

@@ -9,7 +9,7 @@ public class NextLevel : MonoBehaviour
     {
         if (Col.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("MiniGame3");
+            SceneManager.LoadScene("Endscene");
             Debug.Log("Next scene");
         }
     }
