@@ -10,7 +10,6 @@ public class EarthQuakeCube : MonoBehaviour
     [SerializeField] float minDisappearTime = 1f;
     [SerializeField] float maxDisappearTime = 3f;
     [SerializeField] Texture[] brokenMaterial;
-    private Rigidbody rb;
 
 
     // Start is called before the first frame update
@@ -18,11 +17,6 @@ public class EarthQuakeCube : MonoBehaviour
     {
 
         disappearTime = Random.Range(minDisappearTime, maxDisappearTime);
-        rb = GetComponent<Rigidbody>();
-
-
-
-
 
     }
 
@@ -32,26 +26,10 @@ public class EarthQuakeCube : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player")) {
 
-            Invoke(nameof(DestroyCube), disappearTime);
+            Destroy(this.gameObject, disappearTime);
             this.gameObject.GetComponent<Renderer>().material.mainTexture = brokenMaterial[0];
         }
     }
 
 
-
-    //void LetObjectFall()
-    //{
-    //    print("useGravity on");
-    //    rb.useGravity = true;
-    //    rb.constraints = RigidbodyConstraints.None;
-
-    //    Invoke(nameof(DestroyCube), 0.3f);
-
-    //}
-
-
-    void DestroyCube()
-    {
-        Destroy(this.gameObject);
-    }
 }
