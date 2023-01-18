@@ -3423,7 +3423,6 @@ GameObject:
   - component: {fileID: 781046832}
   - component: {fileID: 781046831}
   - component: {fileID: 781046830}
-  - component: {fileID: 781046834}
   - component: {fileID: 781046835}
   - component: {fileID: 781046836}
   - component: {fileID: 781046838}
@@ -3514,26 +3513,6 @@ Transform:
   m_Father: {fileID: 1921447677}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &781046834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 781046829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 536162d851d8d1d499f422dfad8c88d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageAmount: 10
-  damageOnTrigger: 1
-  damageOnCollision: 1
-  continuousDamage: 0
-  continuousTimeBetweenHits: 0
-  destroySelfOnImpact: 0
-  delayBeforeDestroy: 0
-  explosionPrefab: {fileID: 0}
 --- !u!114 &781046835
 MonoBehaviour:
   m_ObjectHideFlags: 0
